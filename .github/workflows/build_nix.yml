@@ -11,10 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-      with:
-        submodules: true
 
-    # sudo apt update && sudo apt install -y libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev
     - run: |
         ./mkn.sh
         curl -Lo mkn https://github.com/mkn/mkn/releases/download/latest/mkn_nix
